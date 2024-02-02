@@ -31,14 +31,14 @@ body{
 .neona {
   font-family: 'cityr', sans-serif;
   color: #e9393c;
-  font-size: 160%;
+  font-size: 300%;
   text-shadow: 0 0 3vw #ef4c4e;
 }
 
 .neonb {
   font-family: 'cityr', sans-serif;
   color: #426DFB;
-  font-size: 160%;
+  font-size: 300%;
   text-shadow: 0 0 3vw #57a9ba;
 }
 
@@ -126,9 +126,9 @@ body{
   margin: 6rem 0 6rem 0;
 }
 
-.sombramenu{
+/* .sombramenu{
   text-shadow: 2px 2px 0px #444444b0, 3px 3px 0px #61606091;
-}
+} */
 
 /* Accordion */
 .panel {
@@ -197,9 +197,11 @@ body{
     margin-bottom: 25px;
     font-size: 28px;
 }
+
 .panel-body ul li{
-    margin: 6px 0 0 0;
-    font-size: 28px;
+  padding-bottom: 3rem;
+  margin: 6px 0 6px 0;
+  font-size: 28px;
 }
 
 .panel-body ul p{
@@ -288,54 +290,61 @@ body{
   background-image: unset !important;
 }
 
-.botonrelieve {
-  background-color: transparent;
-  font-weight: semibold;
-  color: #000;
-  font-size: 1rem;
-  border: 2px solid #eee; /* nos ayudará con el efecto */
-  border-radius: .5rem;
-  cursor: pointer;
-  transition: all 1s ease; /* todas las trancisiones durarán un segundo */
-  box-shadow: .5em .5rem 1rem #a3a2a2,
-  -.5em -.5rem 1rem #fff
-  /* desplazar x,  y, blur radius, color */
+.btn-celeste{
+  background-color: #57a9ba;
+  box-shadow: 2px 3px 3px;
 }
 
-.botonrelieve:hover {
-  box-shadow: 0.75em 0.75rem 1rem #fff
-    , -0.75em -0.75rem 1rem #a3a2a2;
+.btn-celeste:hover{
+  background-color: #57a9ba;
+  opacity: 50%;
+  box-shadow: none;
+  transition: all 0.5;
+  -webkit-transition: all 0.5;
+  -moz-transition: all 0.5;
+  -ms-transition: all 0.5;
+  -o-transition: all 0.5;
 }
 
-
-.botonrelieve:active {
-box-shadow: inset 1.2rem 1.2rem 2rem #fff
-, inset -1.2rem -1.2rem 2rem #a3a2a2
+.btn-celeste a p {
+  font-size: 1.5rem;
+  color:white;
+  text-align: center;
 }
 
-.fondoboton{
-  color: #000;
-  background-color: white;
-  background-image: url(/assest/img/CITYROCK1.png);
-  background-size: cover;
-  background-position: center;
-  height: 200px;
-  margin: 0;
-  font-size: 25;
-}
-
-.fondoboton:hover{
-  color:grey;
-  transition: all 0.6s ease;
-  -webkit-transition: all 0.6s ease;
-  -moz-transition: all 0.6s ease;
-  -ms-transition: all 0.6s ease;
-  -o-transition: all 0.6s ease;
-  filter: brightness(50%);
-  -webkit-filter: brightness(90%);
+.btn-celeste a svg {
+  padding-right: 8px; /* Ajusta el relleno a la derecha del icono según tus necesidades */
 }
 
 footer {
   padding-top: 50px;
   padding-bottom: 20px;
+}
+
+.loading-container {
+  text-align: center;
+  overflow: hidden;
+}
+
+.navbar-brand {
+  margin-left: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  transform: skew(-0deg, -7deg);
+}
+
+.blackfont{
+  background-color: #000;
+  opacity: 0.9;
+}
+
+.hidden{
+  overflow: hidden;
+}
+
+.preloader-active .navbar {
+  display: none;
 }
